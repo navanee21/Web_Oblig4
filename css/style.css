@@ -118,7 +118,7 @@ footer{
 /* Laga hovudbilde som en background image, endrer på tekstren utifra prototypen og plasserer teksten der den skal ver v.h.a. flexbox */
 
 .hovudbilete{
-    background-image: url(/Users/ninaberkova/Desktop/W/Oblig3_ComfWear_Nina-Berkova/img/hovedbilete.jpg);
+    background-image: url(../img/hovedbilete.jpg);
     background-position: center center;
     background-size: cover;
     filter: drop-shadow(2px 2px 1px #0000006e);
@@ -211,7 +211,7 @@ footer{
 
 /*Gir explore dei to ulike bakgrunnsbilda, og endrer på storleikenog utseende*/
 .explore1{
-    background-image: url(/Users/ninaberkova/Desktop/W/Oblig3_ComfWear_Nina-Berkova/img/yourstyle.jpg);
+    background-image: url(../img/yourstyle.jpg);
     background-position: center center;
     background-size: cover;
     height: 43vw;
@@ -220,7 +220,7 @@ footer{
 }
 
 .explore2{
-    background-image: url(/Users/ninaberkova/Desktop/W/Oblig3_ComfWear_Nina-Berkova/img/getfit.jpg);
+    background-image: url(../img/getfit.jpg);
     background-position: center center;
     background-size: cover;
     height: 43vw;
