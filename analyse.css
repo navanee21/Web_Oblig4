@@ -1,0 +1,13 @@
+body{
+    margin: 5rem;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.index, .bruker, .produkt{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
