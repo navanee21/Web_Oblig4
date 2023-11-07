@@ -1,77 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="analyse.css">
-    <title>Analyse</title>
-</head>
-<body>
-    <header>
-        <h1>Analyse av .html filene mine</h1>
-    </header>
-    <main>
-        <div class="index">
-            <h2>index.html</h2>
-            <section>
-                <h3>SEO resultat</h3>
-                
-                <p>analyse
-                </p>
-            </section>
-            <section>
-                <h3>UU resultat</h3>
-                <img src="img_analyse/index_summary.png" alt="." width="200px">
-                <img src="img_analyse/index_detail.png" alt="." width="200px">
-                <p>analyse
-                </p>
-            </section>
-            <section>
-                <h3>Chat GPT</h3>
-                <img src="img_analyse/indexchat.png" alt=".">
-            </section>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        <link href="css/font/css/fontawesome.css" rel="stylesheet">
+        <link href="css/font/css/brands.css" rel="stylesheet">
+        <link href="css/font/css/solid.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <link rel="stylesheet" href="css/style.css">
+        <title>ComfWear</title>
+    </head>
+    <body>
+        <div id="container"> <!--Lager container til grid delen-->
+                <header>
+                    <section class="box"> <!--Laga en klasse til heile topp delen av headeren-->
+                        <nav>
+                            <ul class="navigasjon-venstre">
+                                <li><a href="#"><i class="fa-solid fa-ellipsis-vertical" style="color: #00646a;"></i></a></li>
+                            </ul>
+                        </nav>
+                        <a class="logo" href="index.html">
+                            <img src="img/LOGO-3.png" alt="Logo">
+                        </a>
+                        <nav class="d-navigasjon"> <!--Topp navigasjon til desktop, display:none;-->
+                            <ul class="d-navigasjon-høgre">
+                                <li><input class="søk-input" type="text" placeholder="Search">
+                                <button class="søk-button" style="border:none;"><i class="fa-solid fa-magnifying-glass" style="color: #00646a;"></i></button></li>
+                                <li><a href="#"><i class="fa-solid fa-image" style="color: #00646a;"></i></a></li>   
+                                <li><a href="bruker.html"><i class="fa-regular fa-user" style="color: #00646a;"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-heart" style="color: #00646a;"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-cart-shopping" style="color: #00646a;"></i></a></li>
+                            </ul>
+                        </nav>
+                        <nav>
+                            <ul class="navigasjon-høgre">
+                                <li><a href="bruker.html"><i class="fa-regular fa-user" style="color: #00646a;"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-heart" style="color: #00646a;"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-cart-shopping" style="color: #00646a;"></i></a></li>
+                            </ul>
+                        </nav> 
+                    </section> 
+                    <section class="d-seksjoner"> <!--seksjoner til desktop, display none på mobil-->
+                        <a href="#">Women</a>
+                        <a href="#">Men</a>
+                        <a href="#">Sale</a>
+                        <a href="#">Brands</a>
+                        <a href="#">Inspiration</a>
+                        <a href="#">Popular</a>
+                    </section>
+                    <nav class="søkefelt">
+                        <input class="søk-input" type="text" placeholder="Search">
+                        <button class="søk-button" style="border:none;"><i class="fa-solid fa-magnifying-glass" style="color: #00646a;"></i></button>
+                    </nav>
+                </header>
+                <main> <!--alt i main med d- er ikkje med på mpbil versjon-->
+                    <figure class="chat">
+                        <i class="fa-regular fa-comment"></i>
+                    </figure>
+                    <p class="ekstra"> RETURN POLICY       FREE SHIPPING OVER 699      SECURE PAYMENT METHODS</p>
+                    <section class="analyse">
+                        <div class="index">
+                            <h2>index.html</h2>
+                            <p>Eg brukte lighthouse....</p>
+                            <section class="overskrift">
+                                <h3>SEO resultat</h3>
+                                
+                                <p>analyse
+                                </p>
+                            </section>
+                            <section class="overskrift">
+                                <h3>UU resultat</h3>
+                                <img src="img_analyse/index_summary.png" alt="." width="200px">
+                                <p>Eg fekk totalt 14 errors og 5 alerts. <br>
+                                <img src="img_analyse/index_detail.png" alt="." width="200px">
+                                <p>Missing form labels: <br>
+                                    Eg har to felt med input, og fekk da missing form label på disse.<br><br>
+                                    Empty buttons:<br>
+                                    To errors på buttons som ikkje er funksjonelle.<br><br>
+                                    Empty links:<br>
+                                    Eg fekk 8 errors om missing link. Dette er på ikonar som eg skal sende brukeren til ein anna side, som ikkje vert laga.
+                                </p>
+                                <p>
+                                    Suspicious alternative text: idk <br>
+                                    Missing first level heading: idk <br>
+                                    Skipped heading level: <br>
+                                    Possible heading <br>
+                                </p>
+                            </section>
+                            <section>
+                                <h3>Chat GPT</h3>
+                                <img src="img_analyse/indexchat.png" alt="." width="400px">
+                            </section>
+                        </div>
+                        <div class="produkt">
+                            <h2>produkt.html</h2>
+                            <p>Eg brukte lighthouse....</p>
+                            <section class="overskrift">
+                                <h3>SEO resultat - Lighthouse</h3>
+                                
+                                <p>analyse
+                                </p>
+                            </section>
+                            <section class="overskrift">
+                                <h3>UU resultat</h3>
+                                <img src="img_analyse/produkt_summary.png" alt="." width="200px">
+                                <p>Eg fekk totalt 14 errors og 5 alerts. <br>
+                                <img src="img_analyse/produkt_details.png" alt="." width="200px">
+                                <img src="img_analyse/produkt_details2.png" alt="." width="200px">
+                                <p>Missing form labels: <br>
+                                    Eg har to felt med input, og fekk da missing form label på disse.<br><br>
+                                    Empty buttons:<br>
+                                    To errors på buttons som ikkje er funksjonelle.<br><br>
+                                    Empty links:<br>
+                                    Eg fekk 8 errors om missing link. Dette er på ikonar som eg skal sende brukeren til ein anna side, som ikkje vert laga.
+                                </p>
+                                <p>
+                                    Suspicious alternative text: idk <br>
+                                    Missing first level heading: idk <br>
+                                    Skipped heading level: <br>
+                                    Possible heading <br>
+                                </p>
+                            </section>
+                            <section>
+                                <h3>Chat GPT</h3>
+                                <img src="img_analyse/produktchat.png" alt="." width="400px">
+                            </section>
+                        </div>
+                        <div class="index">
+                            <h2>bruker.html</h2>
+                            <p>Eg brukte lighthouse....</p>
+                            <section class="overskrift">
+                                <h3>SEO resultat - Lighthouse</h3>
+                                
+                                <p>analyse
+                                </p>
+                            </section>
+                            <section class="overskrift">
+                                <h3>UU resultat</h3>
+                                <img src="img_analyse/bruker_summary.png" alt="." width="200px">
+                                <p>Eg fekk totalt 14 errors og 5 alerts. <br>
+                                <img src="img_analyse/bruker_detail.png" alt="." width="200px">
+                                <p>Missing form labels: <br>
+                                    Eg har to felt med input, og fekk da missing form label på disse.<br><br>
+                                    Empty buttons:<br>
+                                    To errors på buttons som ikkje er funksjonelle.<br><br>
+                                    Empty links:<br>
+                                    Eg fekk 8 errors om missing link. Dette er på ikonar som eg skal sende brukeren til ein anna side, som ikkje vert laga.
+                                </p>
+                                <p>
+                                    Suspicious alternative text: idk <br>
+                                    Missing first level heading: idk <br>
+                                    Skipped heading level: <br>
+                                    Possible heading <br>
+                                </p>
+                            </section>
+                            <section>
+                                <h3>Chat GPT</h3>
+                                <img src="img_analyse/brukerchat.png" alt="." width="400px">
+                            </section>
+                        </div>
+                    </section>
+                    <section class="underbilete">
+                        <a href="#"><img src="img/adidas.jpg" alt="adidas"></a>
+                        <a href="#"><img src="img/nike.jpg" alt="nike"></a>
+                        <a href="#"><img src="img/converse.jpg" alt="converse"></a>
+                        <a href="#"><img src="img/skate.jpg" alt="vans"></a>
+                    </section>
+                    <div>
+                        <section class="seksjoner">
+                            <h4 class="w">Womens</h4>
+                            <h4>Mens</h4>
+                            <h4>Popular</h4>
+                        </section>
+                        <div class="bilder">
+                            <a href="produkt.html"><img src="img/tilprodukt.png" alt="produkt"></a>
+                            <img src="img/adidas.jpg" alt="Bilde">
+                            <img src="img/adidas.jpg" alt="Bilde">
+                            <img src="img/adidas.jpg" alt="Bilde">
+                            <img class="remove" src="img/adidas.jpg" alt="Bilde"> <!--remove klassene skal visast på mobil men ikkje desktop-->
+                            <img class="remove" src="img/adidas.jpg" alt="Bilde">
+                        </div>
+                    </div>
+                    <div>
+                        <section class="explore">
+                            <h2>Explore with us</h2>
+                        </section>
+                        <section class="boxexplore">  <!--box explore- foreldre element som legger aalt under i column på mobil, row på desktop-->
+                            <section class="explore1"> <!--gir barnelementa klasse, slik at dei kan bli til forledre element til innhaldet for å plassere innhald vha css som ønska-->
+                                <h3>Find your style</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            </section>
+                            <section class="explore2">
+                                <h3>Get fit</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            </section>
+                        </section>
+                    </div>
+                </main>
+                <footer>
+                    <section class="lastened"> <!--last ned seksjon til mobil-->
+                        <figure class="mobil">
+                            <i class="fa-regular fa-mobile-screen-button fa-4x"></i>
+                        </figure>
+                        <figure class="download">
+                            <img src="img/download-on-the-app-store-badge.png" alt="app store">
+                            <img src="img/google.png" alt="google play">
+                        </figure>
+                    </section>
+                    <section>
+                        <section class="payment"> <!--Payment seksjon til mobil-->
+                            <i class="fa-brands fa-apple-pay fa-2x"></i>
+                            <i class="fa-brands fa-google-pay fa-2x"></i>
+                            <i class="fa-brands fa-cc-paypal fa-2x"></i>
+                            <i class="fa-brands fa-cc-visa fa-2x"></i>
+                            <i class="fa-brands fa-cc-mastercard fa-2x"></i>
+                        </section>
+                        <section class="login"> <!--Login seksjon til mobil-->
+                            <input class="mail" type="text" placeholder="Your email/Phone number">
+                            <button class="continue" style="border:none;">Continue</button>
+                        </section>
+                    </section>
+                    <div class="d-nede"> <!-- last ned, payment og log in seksjon til desktop i ein klasse-->
+                        <section class="d-login">
+                            <p>Join the ComfWear family!<br>
+                            Sign up!</p>
+                            <section class="d-input">
+                                <input class="d-mail" type="text" placeholder="Your email/Phone number">
+                                <button class="d-continue" style="border:none;">Continue</button>
+                            </section>
+                            <p>Already have an account?</p>
+                            <a href="#">Sign in</a>
+                        </section>
+                        <section class="d-høgre"> <!--ny klassee for barnelementet slik at den bestemme plasseringa til d-download og d-applegoogle i en column-->
+                            <section class="d-download">
+                                    <figure class="d-mobil">
+                                        <i class="fa-regular fa-mobile-screen-button fa-8x"></i>
+                                    </figure>
+                                    <figure class="d-applegoogle">
+                                        <img src="img/download-on-the-app-store-badge.png" alt="app store">
+                                        <img src="img/google.png" alt="google play">
+                                    </figure>
+                            </section>
+                            <section class="d-payment">
+                                <i class="fa-brands fa-apple-pay fa-2x"></i>
+                                <i class="fa-brands fa-google-pay fa-2x"></i>
+                                <i class="fa-brands fa-cc-paypal fa-2x"></i>
+                                <i class="fa-brands fa-cc-visa fa-2x"></i>
+                                <i class="fa-brands fa-cc-mastercard fa-2x"></i>
+                            </section>
+                        </section>
+                    </div>
+                    <section class="slutt"> <!--Slutt html lik på alle versjonane og html filene-->
+                        <section class="aboutus">
+                            <h4>About us</h4>
+                            <p>ipsum<br>
+                                Dolor sit amet<br>
+                                Consectetur <br>
+                                Adipiscing elit<br>
+                                Sed do Veniam<br>
+                                Quis nostrud<br>
+                                Exercitation ullamco<br>
+                                Laboris nisi<br>
+                                Ut aliquip ex</p>
+                        </section>
+                        <section class="help">
+                            <h4>Help</h4>
+                            <p>Lorem ipsum<br>
+                                Dolor sit amet<br>
+                                Consectetur <br>
+                                Adipiscing elit<br>
+                                Sed do Veniam<br>
+                                Quis nostrud<br>
+                                Exercitation ullamco<br>
+                                Laboris nisi<br>
+                                Ut aliquip ex</p>
+                        </section>
+                        <section class="ral">
+                            <h4>Region and language</h4>
+                            <p>Region<br>
+                                Language&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EN</p>
+                        </section>
+                        <section class="sosialemedier">
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-x-twitter"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                        </section>
+                    </section>
+                </footer>
         </div>
-        <div class="produkt">
-            <h2>produkt.html</h2>
-            <section>
-                <h3>SEO resultat</h3>
-                
-                <p>analyse
-                </p>
-            </section>
-            <section>
-                <h3>UU resultat</h3>
-                <img src="img_analyse/produkt_summary.png" alt="." width="200px">
-                <img src="img_analyse/produkt_details.png" alt="." width="200px">
-                <img src="img_analyse/produkt_details2.png" alt="." width="200px">
-                <p>analyse
-                </p>
-            </section>
-            <section>
-                <h3>Chat GPT</h3>
-                <img src="img_analyse/produktchat.png" alt=".">
-            </section>
-        </div>
-        <div class="bruker">
-            <h2>bruker.html</h2>
-            <section>
-                <h3>SEO resultat</h3>
-                
-                <p>analyse
-                </p>
-            </section>
-            <section>
-                <h3>UU resultat</h3>
-                <img src="img_analyse/bruker_summary.png" alt="." width="200px">
-                <img src="img_analyse/bruker_detail.png" alt="." width="200px">
-                <p>analyse
-                </p>
-            </section>
-            <section>
-                <h3>Chat GPT</h3>
-                <img src="img_analyse/brukerchat.png" alt=".">
-            </section>
-        </div>
-    </main>
-</body>
+    </body>
 </html>

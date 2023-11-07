@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Find your style at CompWear. Explore a wide range of footwear, and find the perfect pair today!" />
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
         <link href="css/font/css/fontawesome.css" rel="stylesheet">
         <link href="css/font/css/brands.css" rel="stylesheet">
@@ -46,7 +47,7 @@
                     <button class="søk-button" style="border:none;"><i class="fa-solid fa-magnifying-glass" style="color: #00646a;"></i></button>
                 </nav>
             </header>
-            <main>
+            <main itemscope itemtype="https://schema.org/Product">
                 <figure class="chat">
                     <i class="fa-regular fa-comment"></i>
                 </figure>
@@ -75,7 +76,7 @@
                 <div class="tilbake"> <!--eige tilbake knapp til mobil versjon-->
                     <a href="index.html"><i class="fa-solid fa-arrow-left" style="color: #000000"></i></a>
                 </div>
-                <h3 class="namn">Sko merke namn</h3>
+                <h3 class="namn" itemprop="name">Sko merke namn</h3>
                 <section class="produktbilder"><!--klasse for å bestemme plasseringen til bilda-->
                     <figure class="småe"> <!--eige klasse får å bestemme at disse tre skal ligge i column(css)-->
                         <img class="ben" src="img/placeholder.svg" alt="Bilde1">
@@ -115,7 +116,7 @@
                             </section>
                     </section>
                     <section class="pdr"> <!--Eige klasse for pdr, ligger ikkje i samme box med resten av produkt informasjon-->
-                        <h5 class="pd">Produkt details <i class="fa-solid fa-chevron-down"></i></h5>
+                        <h5 class="pd" itemprop="description">Produkt details <i class="fa-solid fa-chevron-down"></i></h5>
                         <h5 class="reviews">Reviews<i class="fa-solid fa-chevron-down"></i></h5>
                     </section>
                 </section>

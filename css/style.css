@@ -69,6 +69,9 @@ footer{
 .fa-magnifying-glass{
     text-shadow: 2px 2px 1px #0000006e;
 }
+label{
+    display: none;
+}
 
 .søkefelt{
     background-color: white;
@@ -137,7 +140,7 @@ footer{
     font-weight: 600;
     margin-bottom: 8vw;
 }
-.hovudbilete h2{
+.hovudbilete h1{
     font-size: 4vw;
     font-weight: 700;
     margin-right: 43vw;
@@ -931,4 +934,58 @@ footer{
         color: rgba(148, 148, 148, 0.71);
     }
 
+}
+
+.analyse{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.overskrift{
+    font-weight: 200;
+    font-style: italic;
+}
+
+.beskriving{
+    font-style: italic;
+    font-size: small;
+}
+
+.index, .produkt, .bruker{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.attmed, .chatgpt{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.SEO, .UU{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.googletrends{
+    list-style: none;
+}
+
+.tabell{
+    border-collapse: collapse;
+    margin: 25px 0px;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.tabell thead tr{
+    background-color: rgba(112, 175, 123, 0.806);
+    color: black;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+.tabell tbody tr{
+    text-align: left;
 }

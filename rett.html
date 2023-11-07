@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="analyse">
+        <h1>Analyse av .html filene mine frå oblig3</h1>
+        <h2 class="overskrift">Google trends</h2>
+        <ul class="googletrends">
+            <li>
+                <h3>Shoes</h3>
+                <p>Nøkkelordet Shoes har ein relativt konstant søkeinteresse over lengre tid. Detta vil seie at uansett når på året, vil dette ordet vere relevant.</p>
+                <img src="img_analyse/Shoes.png" alt="bilde" width="300px">
+            </li>
+            <li>
+                <h3>Winter shoes</h3>
+                <p>Vi kan sjå at dette nøkkelordet har spikes, altså går oppover, kvart år på vintertida.</p>
+                <img src="img_analyse/WinterShoes.png" alt="bilde" width="300px">
+            </li>
+            <li>
+                <h3>Sneakers</h3>
+                <p>Vi kan sjå at dei siste 5 åra har søkeinteressen gått opp ei smule. Dette kan komme av av sneakers er blitt meir populære og folk vil difor kjøpe seg slike sko. Ellers er det også kanskje konstant uavhengig av årstid.</p>
+                <img src="img_analyse/Sneakers.png" alt="bilde" width="300px">
+            </li>
+            <li>
+                <h3>Nike shoes</h3>
+                <p>Nike shoes har også ein ganske konstant graf. Den viser ein spike, som kna komme av at i 2021 var skoen Nike Air Force svært populær.</p>
+                <img src="img_analyse/NikeShoes.png" alt="bilde" width="300px">
+            </li>
+        </ul>
+        <h2>Før forbedring:</h2>
+        <div class="index">
+            <h3>index.html</h3>
+            <section>
+                <h4 class="overskrift">SEO resultat</h4>
+                <p class="beskriving">Analyse ved hjelp av Lighthouse</p>
+                <section class="SEO">
+                    <section class="attmed">
+                        <img src="img_analyse/indexSEO.png" alt="." width="400px">
+                        <img src="img_analyse/indexSEO2.png" alt="." width="400px">
+                        <p>Desktop resultat: Eg fikk totalt 90% på SEO desktop.<br> Ingen meta description: meta name="description" <br>Har ikkje gode font-størrelser</p>
+                    </section>
+                    <section class="attmed">
+                        <img src="img_analyse/m-indexSEO.png" alt="." width="400px">
+                        <img src="img_analyse/m-brukerSEO2.png" alt="." width="400px">
+                        <p>Mobil resultat: Eg fikk score 83 på mobil index. Her fikk eg manglande meta description og ulesbar font-storleik.<br></p>
+                    </section>
+                </section>
+            </section>
+            <section>
+                <h4 class="overskrift">UU resultat</h4>
+                <p class="beskriving">Analyse ved hjelp av Webaim</p>
+                <section class="UU">
+                    <section class="attmed">
+                        <img src="img_analyse/index_summary.png" alt="." width="400px">
+                        <p>Resultat:<br>
+                            Eg fikk totalt 14 errors og 5 alerts på indexen min
+                        </p>
+                    </section>
+                    <section class="attmed">
+                        <img src="img_analyse/index_detail.png" alt="." width="200px">
+                        <p>Missing form labels: <br>
+                            Eg har to felt med input, og fekk da missing form label på disse.<br><br>
+                            Empty buttons:<br>
+                            To errors på buttons som ikkje er funksjonelle.<br><br>
+                            Empty links:<br>
+                            Eg fekk 8 errors om missing link. Dette er på ikonar som eg skal sende brukeren til ein anna side, som ikkje vert laga.<br><br>
+                            Suspicious alternative text: <br>
+                            Alternativ teksten min burde endrast <br><br>
+                            Missing first level heading: <br>
+                            Mangla h1 på index sida mi. Dette er viktig å ha for å halde på den viktigaste delen av sida <br><br>
+                            Skipped heading level: <br>
+                            Eg gikk rett fra h2 til h4, utan å inkludere h3. Dette burde endrast på.<br><br>
+                            Possible heading: <br>
+                            Dette gjelder "Already have an account?" på enden av sida, som eg tenkte ikkje skal vere ein heading.
+                        </p>
+                    </section>
+                </section>
+            </section>
+            <h4 class="overskrift">Chat GPT</h4>
+            <p class="beskriving">Analyse ved hjelp av ChatGPT</p>
+            <section class="chatgpt">
+                <img src="img_analyse/indexchat.png" alt="." width="400px">
+                <p>Resultat</p>
+            </section>
+            <table class="tabell">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Webaim</th>
+                        <th>Lighthouse</th>
+                        <th>ChatGPT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>SEO</th>
+                        <th></th>
+                        <th>Manglende meta description</th>
+                        <th>Manglende meta description. T.D.: Meta description og menta keywords.<br>CSS og Google Fonts kan påvirke innlastingstida.</th>
+                    </tr>
+                    <tr>
+                        <th>UU</th>
+                        <th>Ukjente input felt.<br>U-funksjonelle knapper<br>Ikoner utan URL<br>Anbefalt endring av alt-tekst</th>
+                        <th>...</th>
+                        <th>Navigasjonsikoner burde ha ein beskrivende alt tekst</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="produkt">
+            <h3>produkt.html</h3>
+            <section>
+                <h4 class="overskrift">SEO resultat</h4>
+                <p class="beskriving">Analyse ved hjelp av Lighthouse</p>
+                <section class="SEO">
+                    <section class="attmed">
+                        <img src="img_analyse/produktSEO.png" alt="." width="400px">
+                        <img src="img_analyse/produktSEO2.png" alt="." width="400px">
+                        <p>Desktop resultat:Eg fikk totalt 90% på SEO på desktop versjon<br>På desktop versjon mangla eg meta-description.</p>
+                    </section>
+                    <section class="attmed">
+                        <img src="img_analyse/m-produktSEO.png" alt="." width="400px">
+                        <img src="img_analyse/m-produktSEO2.png" alt="." width="400px">
+                        <p>Mobil resultat: Eg fikk 81% på mobil versjon.<br>Her mangla eg også meta-description. Nokon av font-størrelsane var ulesbare og 14% av touch-bare knapper var for små.</p>
+                    </section>
+                </section>
+            </section>
+            <section>
+                <h4 class="overskrift">UU resultat</h4>
+                <p class="beskriving">Analyse ved hjelp av Webaim</p>
+                <section class="UU">
+                    <section class="attmed">
+                        <img src="img_analyse/produkt_summary.png" alt="." width="400px">
+                        <p>Resultat:<br>
+                        Eg fikk totalt 14 errors og5 alerts på indexen min
+                    </p>
+                    </section>
+                    <section class="attmed">
+                        <img src="img_analyse/produkt_details.png" alt="." width="300px">
+                        <img src="img_analyse/produkt_details2.png" alt="." width="300px">
+                        <p>Missing form labels: <br>
+                            Detta kommer av headingen, som er lik på alle sidene. Eg har to felt med input, og fekk da missing form label på disse.<br><br>
+                            Empty buttons:<br>
+                            Detta er også ein del av headingen. To errors på button som ikkje er funksjonelle.<br><br>
+                            Empty links:<br>
+                            Detta er også element som skal i hovudsak bli linka til ein anna seksjon. Disse vert ikkje laga.<br><br>
+                            Contrast Errors:<br>
+                            Denne seier at bakgrunnsfargen min er for lik text fargen, og gjelder da navigasjonen på starten av main.<br><br>
+                            Suspicious alternative text: <br>
+                            Kom fra heading. Logo alternativ tekst burde endrast.<br><br>
+                            Missing first level heading: <br>
+                            Mangla ein h1 her også. som sagt, den er viktig å ha. Ved forbedringar tenkjer eg å bruke produkt namn som h1. <br><br>
+                            Skipped heading level: <br>
+                            Eg hoppa rett fra h3 til h5. Dette burde endrast på.<br><br>
+                            Possible heading: <br>
+                            Dette gjelder også "Already have an account?", som er ein del av footer og er lik på alle 3 sidene.<br><br>
+                            Redundant link:<br>
+                            Eg har linka fleire element til same url, som kommer av at eg ikkje har laga fleire nettsider.
+                        </p>
+                    </section>
+                </section>
+            </section>
+            <h4 class="overskrift">Chat GPT</h4>
+            <p class="beskriving">Analyse ved hjelp av ChatGPT</p>
+            <section class="chatgpt">
+                <img src="img_analyse/produktchat.png" alt="." width="400px">
+                <p>Resultat</p>
+            </section>
+            <table class="tabell">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Webaim</th>
+                        <th>Lighthouse</th>
+                        <th>ChatGPT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>SEO</th>
+                        <th></th>
+                        <th>Manglende meta description</th>
+                        <th>Manglende meta description. TD: Meta description og menta keywords.</th>
+                    </tr>
+                    <tr>
+                        <th>UU</th>
+                        <th></th>
+                        <th>...</th>
+                        <th>...</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="bruker">
+            <h3>bruker.html</h3>
+            <section>
+                <h4 class="overskrift">SEO resultat</h4>
+                <p class="beskriving">Analyse ved hjelp av Lighthouse</p>
+                <section class="SEO">
+                    <section class="attmed">
+                        <img src="img_analyse/brukerSEO.png" alt="." width="400px">
+                        <img src="img_analyse/brukerSEO2.png" alt="." width="400px">
+                        <p>Desktop resultat: Eg fikk 90 på SEO.<br>Manglande meta-description i HTML.</p>
+                    </section>
+                    <section class="attmed">
+                        <img src="img_analyse/m-brukerSEO.png" alt="." width="400px">
+                        <img src="img_analyse/m-brukerSEO2.png" alt="." width="400px">
+                        <p>Mobil resultat: Eg fikk 83 på SEO brukersida på mobil.<br>Igjen, manglande meta-description som på alle dei andre, og ulesbar tekst.</p>
+                    </section>
+                </section>
+            </section>
+            <section>
+                <h4 class="overskrift">UU resultat</h4>
+                <p class="beskriving">Analyse ved hjelp av Webaim</p>
+                <section class="UU">
+                    <section class="attmed">
+                        <img src="img_analyse/bruker_summary.png" alt="." width="400px">
+                        <p>Resultat:<br>
+                            Eg fikk totalt 14 errors og5 alerts på indexen min
+                        </p>
+                    </section>
+                    <section class="attmed">
+                        <img src="img_analyse/bruker_detail.png" alt="." width="200px">
+                        <p>Missing form labels: <br>
+                            Samme som på dei to forrige.<br><br>
+                            Empty buttons:<br>
+                            Igjen, samme problem som på forrige.<br><br>
+                            Empty links:<br>
+                            Samme problem.<br>
+                            Suspicious alternative text: <br>
+                            Igjen, problem med alt text på logo.<br><br>
+                            Missing first level heading:<br>
+                            Mangla h1 på denne og. Tenker å evt. legge til noko ekstra tekst som kan ver h1, slik at brukeren veit hen er på burkersida.<br><br>
+                            Skipped heading level: <br>
+                            Eg gikk igjen rett fra h3 til h5.<br><br>
+                            Possible heading: <br>
+                            Ingen av desse skal ver headings.
+                        </p>
+                    </section>
+                </section>
+            </section>
+            <h3 class="overskrift">Chat GPT</h3>
+            <p class="beskriving">Analyse ved hjelp av ChatGPT</p>
+            <section class="chatgpt">
+                <img src="img_analyse/brukerchat.png" alt="." width="400px">
+                <p>Resultat</p>
+            </section>
+            <table class="tabell">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Webaim</th>
+                        <th>Lighthouse</th>
+                        <th>ChatGPT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>SEO</th>
+                        <th>...</th>
+                        <th>...</th>
+                        <th>...</th>
+                    </tr>
+                    <tr>
+                        <th>UU</th>
+                        <th>...</th>
+                        <th>...</th>
+                        <th>...</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h2>Forbedring:</h2>
+        <h3>Index:</h3>
+        <p>Utifra SEO analysen la eg til meta description på alle. Altså både index, bruker og produkt html.<br></p>
+        <p>Det var ikkje så mange errors eg kunne rette opp når det gjeld UU. </p>
+
+        <h2>Tilgjengelighet:</h2>
+        <h3>Skjermleserkompatibilitet:</h3>
+        <p>Alt blir ikkje lest opp.</p>
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+
+        <h3></h3>
+    </section>
+</body>
+</html>
