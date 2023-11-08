@@ -88,6 +88,7 @@ label{
     border-radius: 8px;
     border-color: rgba(0, 82, 87, 1);
     border-width: 1px;
+    padding: 10px;
 }
 /* INDEX.HTML*/
 
@@ -97,7 +98,7 @@ label{
     text-shadow: 2px 2px 1px #000000df;
     margin: 20px 0px;
     background-color: rgba(0, 82, 87, 0.7);
-    font-size: 2.4vw;
+    font-size: 12px;
     font-weight: 400;
     text-align: center;
     padding: 10px;
@@ -136,7 +137,7 @@ label{
     justify-content: flex-end;
 }
 .hovudbilete p{
-    font-size: 2.6vw;
+    font-size: 3vw;
     font-weight: 600;
     margin-bottom: 8vw;
 }
@@ -313,7 +314,7 @@ label{
 }
 
 .aboutus p, .help p, .ral p{
-    font-size: 8px;
+    font-size: 12px;
 }
 /*laga mini navigasjonen og legger det på row med filter(ikkje funksjonell)*/
 .boxmedfilter{
@@ -988,4 +989,15 @@ label{
 }
 .tabell tbody tr{
     text-align: left;
+}
+
+.readability{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.readability img{
+    width: 30%;
+    height: auto;
 }

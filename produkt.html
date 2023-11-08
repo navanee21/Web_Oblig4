@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Find your style at CompWear. Explore a wide range of footwear, and find the perfect pair today!" />
+        <meta name="description" content="Find your style at CompWear. Explore a wide range of footwear, and find the perfect pair today!"/>
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
         <link href="css/font/css/fontawesome.css" rel="stylesheet">
         <link href="css/font/css/brands.css" rel="stylesheet">
@@ -26,7 +26,7 @@
                     </a>
                     <nav class="d-navigasjon">
                         <ul class="d-navigasjon-høgre">
-                            <li><input class="søk-input" type="text" placeholder="Search"></li>
+                            <li><label for="search"></label><input class="søk-input" type="text" placeholder="Search">
                             <li><button class="søk-button" style="border:none;"><i class="fa-solid fa-magnifying-glass" style="color: #00646a;"></i></button></li>
                             <li><a href="#"><i class="fa-solid fa-image" style="color: #00646a;"></i></a></li>   
                             <li><a href="bruker.html"><i class="fa-regular fa-user" style="color: #00646a;"></i></a></li>
@@ -47,7 +47,7 @@
                     <button class="søk-button" style="border:none;"><i class="fa-solid fa-magnifying-glass" style="color: #00646a;"></i></button>
                 </nav>
             </header>
-            <main itemscope itemtype="https://schema.org/Product">
+            <main>
                 <figure class="chat">
                     <i class="fa-regular fa-comment"></i>
                 </figure>
@@ -76,57 +76,59 @@
                 <div class="tilbake"> <!--eige tilbake knapp til mobil versjon-->
                     <a href="index.html"><i class="fa-solid fa-arrow-left" style="color: #000000"></i></a>
                 </div>
-                <h3 class="namn" itemprop="name">Sko merke namn</h3>
-                <section class="produktbilder"><!--klasse for å bestemme plasseringen til bilda-->
-                    <figure class="småe"> <!--eige klasse får å bestemme at disse tre skal ligge i column(css)-->
-                        <img class="ben" src="img/placeholder.svg" alt="Bilde1">
-                        <img class="bto" src="img/placeholder.svg" alt="Bilde2">
-                        <img class="btre" src="img/placeholder.svg" alt="Bilde3">
-                    </figure>
-                    <figure class="stort"> <!--Definere stort bilde med klasse for seg sjølv siden den ikkje skal bli påvirka av .småe img-->
-                        <img class="bfire" src="img/placeholder.svg" alt="Bilde4">
-                    </figure>
-                </section>
-                <section class="til-d"> <!--Bilete til desktop siden dei er så å seie heilt usike, og må ha eige css kode-->
-                    <section class="d-produktbilder">
-                        <img src="img/placeholder.svg" alt="bilde1">
-                        <img src="img/placeholder.svg" alt="bilde1">
-                        <img src="img/placeholder.svg" alt="bilde1">
-                        <img src="img/placeholder.svg" alt="bilde1">
+                <div itemscope itemtype="https://schema.org/Product">
+                    <h3 class="namn" itemprop="name">Sko merke namn</h3>
+                    <section class="produktbilder"><!--klasse for å bestemme plasseringen til bilda-->
+                        <figure class="småe"> <!--eige klasse får å bestemme at disse tre skal ligge i column(css)-->
+                            <img class="ben" itemprop="image" src="img/placeholder.svg" alt="Bilde1">
+                            <img class="bto" itemprop="image" src="img/placeholder.svg" alt="Bilde2">
+                            <img class="btre" itemprop="image" src="img/placeholder.svg" alt="Bilde3">
+                        </figure>
+                        <figure class="stort"> <!--Definere stort bilde med klasse for seg sjølv siden den ikkje skal bli påvirka av .småe img-->
+                            <img class="bfire" src="img/placeholder.svg" alt="Bilde4">
+                        </figure>
                     </section>
-                    <section class="omprodukt">  <!-- klasse for å bruke i css og bestemme korleis produkt informasjon skal vises, mindre klassa innanfor for å gi meir detaljerte og spesifike tilpassingar-->
-                            <h5>Price 1400</h5>
-                            <div>
-                                <h5>Colour: White</h5>
-                                <div class="farger">
-                                    <section class="en"> Red</section>
-                                    <section class="to"> White</section>
-                                    <section class="tre"> Black</section>
-                                    <section class="fire"> Blue</section>
+                    <section class="til-d"> <!--Bilete til desktop siden dei er så å seie heilt usike, og må ha eige css kode-->
+                        <section class="d-produktbilder">
+                            <img src="img/placeholder.svg" itemprop="image" alt="bilde1">
+                            <img src="img/placeholder.svg" itemprop="image" alt="bilde1">
+                            <img src="img/placeholder.svg" itemprop="image" alt="bilde1">
+                            <img src="img/placeholder.svg" itemprop="image" alt="bilde1">
+                        </section>
+                        <section class="omprodukt">  <!-- klasse for å bruke i css og bestemme korleis produkt informasjon skal vises, mindre klassa innanfor for å gi meir detaljerte og spesifike tilpassingar-->
+                                <h5>Price 1400</h5>
+                                <div>
+                                    <h5>Colour: White</h5>
+                                    <div class="farger">
+                                        <section itemprop="color" class="en"> Red</section>
+                                        <section itemprop="color" class="to"> White</section>
+                                        <section itemprop="color" class="tre"> Black</section>
+                                        <section itemprop="color" class="fire"> Blue</section>
+                                    </div>
                                 </div>
-                            </div>
-                            <section class="select">
-                                <a class="selectsize" href="#">select size</a>
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </section>
-                            <section class="siste">
-                                <a class="atb" href="#">Add to basket</a>
-                                <p class="sp">Secure payment<br>   
-                                    Return policy</p>
-                            </section>
+                                <section class="select">
+                                    <a class="selectsize" href="#" itemprop="size">select size</a>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </section>
+                                <section class="siste">
+                                    <a class="atb" href="#">Add to basket</a>
+                                    <p class="sp">Secure payment<br>   
+                                        Return policy</p>
+                                </section>
+                        </section>
+                        <section class="pdr"> <!--Eige klasse for pdr, ligger ikkje i samme box med resten av produkt informasjon-->
+                            <h5 class="pd" itemprop="description">Produkt details <i class="fa-solid fa-chevron-down"></i></h5>
+                            <h5 class="reviews" itemprop="review">Reviews<i class="fa-solid fa-chevron-down"></i></h5>
+                        </section>
                     </section>
-                    <section class="pdr"> <!--Eige klasse for pdr, ligger ikkje i samme box med resten av produkt informasjon-->
-                        <h5 class="pd" itemprop="description">Produkt details <i class="fa-solid fa-chevron-down"></i></h5>
-                        <h5 class="reviews">Reviews<i class="fa-solid fa-chevron-down"></i></h5>
-                    </section>
-                </section>
+                </div>
                 <section class="morelikethis"> <!--Eige klasse for more like this-->
                     <h4 class="mlt">More like this</h4>
                     <figure class="morelikethisbilder">
-                        <img class="mlten" src="img/placeholder.svg" alt="bilde">
-                        <img class="mltto" src="img/placeholder.svg" alt="bilde">
-                        <img class="mlttre" src="img/placeholder.svg" alt="bilde">
-                        <img class="mltfire" src="img/placeholder.svg" alt="bilde">
+                        <img itemprop="isSimilarTo" class="mlten" src="img/placeholder.svg" alt="bilde">
+                        <img itemprop="isSimilarTo" class="mltto" src="img/placeholder.svg" alt="bilde">
+                        <img itemprop="isSimilarTo" class="mlttre" src="img/placeholder.svg" alt="bilde">
+                        <img itemprop="isSimilarTo" class="mltfire" src="img/placeholder.svg" alt="bilde">
                     </figure>
                 </section>
             </main>
