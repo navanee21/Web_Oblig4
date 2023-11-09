@@ -21,7 +21,7 @@
                 <section class="d-box"> <!--samme header på desktop som dei andre .html filene-->
                     <nav>
                         <ul class="navigasjon-høgre">
-                            <li><a href="#"><i class="fa-solid fa-ellipsis-vertical" style="color: #00646a;"></i></a></li>
+                            <li><a href="#" aria-label="More"><i class="fa-solid fa-ellipsis-vertical" style="color: #00646a;"></i></a></li>
                         </ul>
                     </nav>
                     <a class="logo" href="index.html">
@@ -29,19 +29,19 @@
                     </a>
                     <nav class="d-navigasjon">
                         <ul class="d-navigasjon-høgre">
-                            <li><label for="search"></label><input class="søk-input" type="text" id="search" placeholder="Search">
-                            <button class="søk-button" style="border:none;"><i class="fa-solid fa-magnifying-glass" style="color: #00646a;"></i></button></li>
-                            <li><a href="#"><i class="fa-solid fa-image" style="color: #00646a;"></i></a></li>   
-                            <li><a href="bruker.html"><i class="fa-regular fa-user" style="color: #00646a;"></i></a></li>
-                            <li><a href="#"><i class="fa-regular fa-heart" style="color: #00646a;"></i></a></li>
-                            <li><a href="#"><i class="fa-regular fa-cart-shopping" style="color: #00646a;"></i></a></li>
+                            <li><label for="search">search</label><input class="søk-input" type="text" id="search" placeholder="Search">
+                            <li><button class="søk-button" style="border:none;" aria-label="search"><i class="fa-solid fa-magnifying-glass" style="color: #00646a;"></i></button></li>
+                            <li><a href="index.html" aria-label="search by image"><i class="fa-solid fa-image" style="color: #00646a;"></i></a></li>   
+                            <li><a href="bruker.html" aria-label="user"><i class="fa-regular fa-user" style="color: #00646a;"></i></a></li>
+                            <li><a href="index.html" aria-label="heart"><i class="fa-regular fa-heart" style="color: #00646a;"></i></a></li>
+                            <li><a href="index.html" aria-label="shopping cart"><i class="fa-regular fa-cart-shopping" style="color: #00646a;"></i></a></li>
                         </ul>
                     </nav>
                     <nav>
-                        <ul class="navigasjon-venstre">
-                            <li><a href="bruker.html"><i class="fa-regular fa-user" style="color: #00646a;"></i></a></li>
-                            <li><a href="#"><i class="fa-regular fa-heart" style="color: #00646a;"></i></a></li>
-                            <li><a href="#"><i class="fa-regular fa-cart-shopping" style="color: #00646a;"></i></a></li>
+                        <ul class="navigasjon-høgre">
+                            <li><a href="bruker.html" aria-label="user"><i class="fa-regular fa-user" style="color: #00646a;"></i></a></li>
+                            <li><a href="index.html" aria-label="heart"><i class="fa-regular fa-heart" style="color: #00646a;"></i></a></li>
+                            <li><a href="index.html" aria-label="shopping cart"><i class="fa-regular fa-cart-shopping" style="color: #00646a;"></i></a></li>
                         </ul>
                     </nav> 
                 </section> 
@@ -98,7 +98,8 @@
                         <i class="fa-brands fa-cc-mastercard fa-2x"></i>
                     </section>
                     <section class="login">
-                        <input class="mail" type="text" placeholder="Your email/Phone number">
+                        <label for="login">search</label>
+                        <input class="mail" type="text" id="login" placeholder="Your email/Phone number">
                         <button class="continue" style="border:none;">Continue</button>
                     </section>
                 </section>
@@ -107,7 +108,7 @@
                         <p>Join the ComfWear family!<br>
                         Sign up!</p>
                         <section class="d-input">
-                            <input class="d-mail" type="text" placeholder="Your email/Phone number">
+                            <input class="d-mail" type="text" id="login" placeholder="Your email/Phone number">
                             <button class="d-continue" style="border:none;">Continue</button>
                         </section>
                         <p>Already have an account?</p>

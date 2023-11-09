@@ -69,9 +69,6 @@ footer{
 .fa-magnifying-glass{
     text-shadow: 2px 2px 1px #0000006e;
 }
-label{
-    display: none;
-}
 
 .søkefelt{
     background-color: white;
@@ -83,7 +80,9 @@ label{
     display: flex;
     justify-content: center;
 }
-
+label{
+    display: none;
+}
 .søk-button, .søk-input{
     border-radius: 8px;
     border-color: rgba(0, 82, 87, 1);
@@ -334,7 +333,7 @@ label{
     padding: 0;
 }
 .produktnavigasjon li a{
-    color: rgba(161, 161, 161, 1);
+    color: rgb(68, 68, 68);
     text-decoration: none;
 }    
 

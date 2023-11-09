@@ -18,7 +18,7 @@
                     <section class="box"> <!--Laga en klasse til heile topp delen av headeren-->
                         <nav>
                             <ul class="navigasjon-venstre">
-                                <li><a href="#"><i class="fa-solid fa-ellipsis-vertical" style="color: #00646a;"></i></a></li>
+                                <li><a href="#" aria-label="More"><i class="fa-solid fa-ellipsis-vertical" style="color: #00646a;"></i></a></li>
                             </ul>
                         </nav>
                         <a class="logo" href="analyse.html">
@@ -26,19 +26,19 @@
                         </a>
                         <nav class="d-navigasjon"> <!--Topp navigasjon til desktop, display:none;-->
                             <ul class="d-navigasjon-høgre">
-                                <li><label for="search">Search</label><input class="søk-input" type="text" id="search">
-                                <button class="søk-button" style="border:none;"><i class="fa-solid fa-magnifying-glass" style="color: #00646a;"></i></button></li>
-                                <li><a href="bruker.html"><i class="fa-solid fa-image" style="color: #00646a;"></i></a></li>   
-                                <li><a href="bruker.html"><i class="fa-regular fa-user" style="color: #00646a;"></i></a></li>
-                                <li><a href="bruker.html"><i class="fa-regular fa-heart" style="color: #00646a;"></i></a></li>
-                                <li><a href="bruker.html"><i class="fa-regular fa-cart-shopping" style="color: #00646a;"></i></a></li>
+                                <li><label for="search">search</label><input class="søk-input" type="text" id="search" placeholder="Search">
+                                <li><button class="søk-button" style="border:none;" aria-label="Search"><i class="fa-solid fa-magnifying-glass" style="color: #00646a;"></i></button></li>
+                                <li><a href="index.html" aria-label="search by image"><i class="fa-solid fa-image" style="color: #00646a;"></i></a></li>   
+                                <li><a href="bruker.html" aria-label="user"><i class="fa-regular fa-user" style="color: #00646a;"></i></a></li>
+                                <li><a href="index.html" aria-label="heart"><i class="fa-regular fa-heart" style="color: #00646a;"></i></a></li>
+                                <li><a href="index.html" aria-label="shopping cart"><i class="fa-regular fa-cart-shopping" style="color: #00646a;"></i></a></li>
                             </ul>
                         </nav>
                         <nav>
                             <ul class="navigasjon-høgre">
-                                <li><a href="bruker.html"><i class="fa-regular fa-user" style="color: #00646a;"></i></a></li>
-                                <li><a href="#"><i class="fa-regular fa-heart" style="color: #00646a;"></i></a></li>
-                                <li><a href="#"><i class="fa-regular fa-cart-shopping" style="color: #00646a;"></i></a></li>
+                                <li><a href="bruker.html" aria-label="user"><i class="fa-regular fa-user" style="color: #00646a;"></i></a></li>
+                                <li><a href="index.html" aria-label="heart"><i class="fa-regular fa-heart" style="color: #00646a;"></i></a></li>
+                                <li><a href="index.html" aria-label="shopping cart"><i class="fa-regular fa-cart-shopping" style="color: #00646a;"></i></a></li>
                             </ul>
                         </nav> 
                     </section> 
@@ -51,8 +51,8 @@
                         <a href="#">Popular</a>
                     </section>
                     <nav class="søkefelt">
-                        <input class="søk-input" type="text" placeholder="Search">
-                        <button class="søk-button" style="border:none;"><i class="fa-solid fa-magnifying-glass" style="color: #00646a;"></i></button>
+                        <input class="søk-input" type="text" id="search" placeholder="Search">
+                        <button class="søk-button" style="border:none;" aria-label="Search"><i class="fa-solid fa-magnifying-glass" style="color: #00646a;"></i></button>
                     </nav>
                 </header>
                 <main> <!--alt i main med d- er ikkje med på mpbil versjon-->
@@ -121,7 +121,8 @@
                             <i class="fa-brands fa-cc-mastercard fa-2x"></i>
                         </section>
                         <section class="login"> <!--Login seksjon til mobil-->
-                            <input class="mail" type="text" placeholder="Your email/Phone number">
+                            <label for="login">Login</label>
+                            <input class="mail" type="text" id="login" placeholder="Your email/Phone number">
                             <button class="continue" style="border:none;">Continue</button>
                         </section>
                     </section>
@@ -130,7 +131,7 @@
                             <p>Join the ComfWear family!<br>
                             Sign up!</p>
                             <section class="d-input">
-                                <input class="d-mail" type="text" placeholder="Your email/Phone number">
+                                <input class="d-mail" type="text" id="login" placeholder="Your email/Phone number">
                                 <button class="d-continue" style="border:none;">Continue</button>
                             </section>
                             <p>Already have an account?</p>

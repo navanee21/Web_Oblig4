@@ -18,7 +18,7 @@
                 <section class="box">
                     <nav>
                         <ul class="navigasjon-høgre">
-                            <li><a href="#"><i class="fa-solid fa-ellipsis-vertical" style="color: #00646a;"></i></a></li>
+                            <li><a href="#" aria-label="More"><i class="fa-solid fa-ellipsis-vertical" style="color: #00646a;"></i></a></li>
                         </ul>
                     </nav>
                     <a class="logo" href="index.html">
@@ -26,25 +26,25 @@
                     </a>
                     <nav class="d-navigasjon">
                         <ul class="d-navigasjon-høgre">
-                            <li><label for="search"></label><input class="søk-input" type="text" id="search" placeholder="Search">
-                            <li><button class="søk-button" style="border:none;"><i class="fa-solid fa-magnifying-glass" style="color: #00646a;"></i></button></li>
-                            <li><a href="#"><i class="fa-solid fa-image" style="color: #00646a;"></i></a></li>   
-                            <li><a href="bruker.html"><i class="fa-regular fa-user" style="color: #00646a;"></i></a></li>
-                            <li><a href="#"><i class="fa-regular fa-heart" style="color: #00646a;"></i></a></li>
-                            <li><a href="#"><i class="fa-regular fa-cart-shopping" style="color: #00646a;"></i></a></li>
+                            <li><label for="search">search</label><input class="søk-input" type="text" id="search" placeholder="Search">
+                            <li><button class="søk-button" style="border:none;" aria-label="Search"><i class="fa-solid fa-magnifying-glass" style="color: #00646a;"></i></button></li>
+                            <li><a href="index.html" aria-label="search by image"><i class="fa-solid fa-image" style="color: #00646a;"></i></a></li>   
+                            <li><a href="bruker.html" aria-label="user"><i class="fa-regular fa-user" style="color: #00646a;"></i></a></li>
+                            <li><a href="index.html" aria-label="heart"><i class="fa-regular fa-heart" style="color: #00646a;"></i></a></li>
+                            <li><a href="index.html" aria-label="shopping cart"><i class="fa-regular fa-cart-shopping" style="color: #00646a;"></i></a></li>
                         </ul>
                     </nav>
                     <nav>
-                        <ul class="navigasjon-venstre">
-                            <li><a href="bruker.html"><i class="fa-regular fa-user" style="color: #00646a;"></i></a></li>
-                            <li><a href="#"><i class="fa-regular fa-heart" style="color: #00646a;"></i></a></li>
-                            <li><a href="#"><i class="fa-regular fa-cart-shopping" style="color: #00646a;"></i></a></li>
+                        <ul class="navigasjon-høgre">
+                            <li><a href="bruker.html" aria-label="user"><i class="fa-regular fa-user" style="color: #00646a;"></i></a></li>
+                            <li><a href="index.html" aria-label="heart"><i class="fa-regular fa-heart" style="color: #00646a;"></i></a></li>
+                            <li><a href="index.html" aria-label="shopping cart"><i class="fa-regular fa-cart-shopping" style="color: #00646a;"></i></a></li>
                         </ul>
                     </nav> 
                 </section> 
                 <nav class="søkefelt">
-                    <input class="søk-input" type="text" placeholder="Search">
-                    <button class="søk-button" style="border:none;"><i class="fa-solid fa-magnifying-glass" style="color: #00646a;"></i></button>
+                    <input class="søk-input" id="search" type="text" placeholder="Search">
+                    <button class="søk-button" style="border:none;" aria-label="search"><i class="fa-solid fa-magnifying-glass" style="color: #00646a;"></i></button>
                 </nav>
             </header>
             <main>
@@ -62,7 +62,7 @@
                 <p class="ekstra"> RETURN POLICY       FREE SHIPPING OVER 699      SECURE PAYMENT METHODS</p>
                 <section class="boxmedfilter">  <!--Ny klasse for seksjonen over produkt bilda og under ekstra-->
                     <nav class="navigasjon">
-                        <a class="d-tilbake" href="index.html"><i class="fa-solid fa-arrow-left" style="color: #000000"></i></a> <!--d-tilbake so, berre visast på desktop-->
+                        <a class="d-tilbake" href="index.html" aria-label="Back"><i class="fa-solid fa-arrow-left" style="color: #000000"></i></a> <!--d-tilbake so, berre visast på desktop-->
                         <ul class="produktnavigasjon"> <!--navigasjon om korleis vi kom oss fram til dette produktet-->
                             <li><a href=".">Womens <i class="fa-solid fa-chevron-right fa-xs" style="color: #aaaaaa;"></i></a></li>
                             <li><a href=".">Sneakers <i class="fa-solid fa-chevron-right fa-xs" style="color: #aaaaaa;"></i></a></li>
@@ -74,9 +74,12 @@
                     </section>
                 </section>
                 <div class="tilbake"> <!--eige tilbake knapp til mobil versjon-->
-                    <a href="index.html"><i class="fa-solid fa-arrow-left" style="color: #000000"></i></a>
+                    <a href="index.html" aria-label="Back"><i class="fa-solid fa-arrow-left" style="color: #000000"></i></a>
                 </div>
                 <div itemscope itemtype="https://schema.org/Product">
+                    <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+                        <meta itemprop="name" content="Author Name">
+                    </span>
                     <h3 class="namn" itemprop="name">Sko merke namn</h3>
                     <section class="produktbilder"><!--klasse for å bestemme plasseringen til bilda-->
                         <figure class="småe"> <!--eige klasse får å bestemme at disse tre skal ligge i column(css)-->
@@ -96,9 +99,12 @@
                             <img src="img/placeholder.svg" itemprop="image" alt="bilde1">
                         </section>
                         <section class="omprodukt">  <!-- klasse for å bruke i css og bestemme korleis produkt informasjon skal vises, mindre klassa innanfor for å gi meir detaljerte og spesifike tilpassingar-->
-                                <h5>Price 1400</h5>
+                            <h5 itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                Price: <span itemprop="price">1400</span>
+                                <meta itemprop="priceCurrency" content="NOK" />
+                            </h5>
                                 <div>
-                                    <h5>Colour: White</h5>
+                                    <h5>Colour: <span itemprop="color">White</span></h5>
                                     <div class="farger">
                                         <section itemprop="color" class="en"> Red</section>
                                         <section itemprop="color" class="to"> White</section>
@@ -151,7 +157,7 @@
                         <i class="fa-brands fa-cc-mastercard fa-2x"></i>
                     </section>
                     <section class="login">
-                        <input class="mail" type="text" placeholder="Your email/Phone number">
+                        <input class="mail" type="text" id="login" placeholder="Your email/Phone number">
                         <button class="continue" style="border:none;">Continue</button>
                     </section>
                 </section>
@@ -160,7 +166,8 @@
                         <p>Join the ComfWear family!<br>
                         Sign up!</p>
                         <section class="d-input">
-                            <input class="d-mail" type="text" placeholder="Your email/Phone number">
+                            <label for="login">Login</label>
+                            <input class="d-mail" type="text" id="login" placeholder="Your email/Phone number">
                             <button class="d-continue" style="border:none;">Continue</button>
                         </section>
                         <p>Already have an account?</p>
