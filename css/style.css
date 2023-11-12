@@ -14,6 +14,18 @@ body{
     grid-template-columns: 1fr;
     grid-template-areas: "header" "main" "footer";
 }
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: white;
+    padding: 8px;
+  }
+
+.skip-link:focus {
+top: 0;
+}
 
 .effekt{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -933,13 +945,17 @@ label{
         font-weight: 100;
         color: rgba(148, 148, 148, 0.71);
     }
-
 }
 
 .analyse{
+    margin: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-bottom: solid;
+    border-top: solid;
+    border-width: 20px;
+    border-color: #8f8f8f6d;
 }
 .overskrift{
     font-weight: 200;
