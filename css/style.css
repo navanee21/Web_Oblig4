@@ -1016,3 +1016,8 @@ label{
     width: 30%;
     height: auto;
 }
+
+.index img, .produkt img, .bruker img, .googletrends img{
+    width: 400px;
+    height: 100%;
+}
